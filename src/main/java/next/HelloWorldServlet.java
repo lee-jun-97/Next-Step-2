@@ -11,7 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/hello")
 public class HelloWorldServlet extends HttpServlet {
-    @Override
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter out = resp.getWriter();
         out.print("Hello World!");
